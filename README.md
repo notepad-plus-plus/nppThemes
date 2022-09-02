@@ -8,8 +8,8 @@ To facilitate sharing of user-created themes, the Notepad++ Developers have crea
 
 For now, you have to manually download and install a Theme from this Collection.
 
-1. Download the XML file from the [`themes/` folder](./themes) of this Collection.
-   - From the [`themes/` folder](./themes), click on the name of the theme's XML file.
+1. Download the XML file from the [`themes/`](./themes) folder of this Collection.
+   - From the [`themes/`](./themes) folder, click on the name of the theme's XML file.
    - From the file's page, click on either the "Raw" button (which will take you to a page where you can copy/paste the raw contents), or even easier, just click on the copy raw contents button, which will immediately place the raw contents in your clipboard for pasting.
        ![image](https://user-images.githubusercontent.com/17455758/188165490-c27c8931-03b7-4012-89a5-506ca650c276.png)
    - Do _not_ just right click to try to download the file from the [directory listing on GitHub](./themes), as either of those right-click actions will download the GitHub web page for that file (which is _not_ the Theme's XML file and will _not_ work).
@@ -32,4 +32,6 @@ To do so, you may either:
 
 The Theme Collection team will validate your theme (using manual review and/or automated tools), and will decide whether or not to accept your submission.  
 
-The original author of any Theme in this Collection may [request](../../issues) that we remove it from the Collection (or submit a PR to do the same), and we will oblige.
+## Automatic License
+
+Any Theme uploaded to the Collection is automatically released under the terms of the GPL v3, as put forth in the Collection's [LICENSE](./LICENSE) file.  If you do not want to publish your Theme under that license, do not submit it to this Collection.
