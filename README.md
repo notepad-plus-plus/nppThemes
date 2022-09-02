@@ -11,7 +11,7 @@ For now, you have to manually download and install a Theme from this Collection.
 1. Download the XML file from the [`themes/` folder](./themes) of this Collection.
    - From the [`themes/` folder](./themes), click on the name of the theme's XML file.
    - From the file's page, click on either the "Raw" button (which will take you to a page where you can copy/paste the raw contents), or even easier, just click on the copy raw contents button, which will immediately place the raw contents in your clipboard for pasting.
-       PASTE
+       ![image](https://user-images.githubusercontent.com/17455758/188165490-c27c8931-03b7-4012-89a5-506ca650c276.png)
    - Do _not_ just right click to try to download the file from the [directory listing on GitHub](./themes), as either of those right-click actions will download the GitHub web page for that file (which is _not_ the Theme's XML file and will _not_ work).
 2. Import the file by placing the file in your `themes\` folder
     - For most installations, the easiest place to put a new theme is in the `%AppData%\Notepad++\themes\` folder.
