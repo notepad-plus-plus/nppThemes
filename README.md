@@ -28,8 +28,8 @@ You can submit your Theme file(s) into this repo if you would like to share it w
 
 To do so, you may either:
 - Create a Pull Request: create your own fork of this repository; add the new theme XML file to the themes folder your fork; and finally, create the Pull Request (PR).
-- or Create a new Issue: go to the [issues](https://github.com/notepad-plus-plus/nppThemes/issues) page for this repository, click on the **New issue** button, give it a meaningful issue name, and attach the theme's .XML file to the issue, then submit the issue.
+- or Create a new Issue: go to the [issues](../../issues) page for this repository, click on the **New issue** button, give it a meaningful issue name, and attach the theme's .XML file to the issue, then submit the issue.
 
 The Theme Collection team will validate your theme (using manual review and/or automated tools), and will decide whether or not to accept your submission.  
 
-The original author of any Theme in this Collection may [request](https://github.com/notepad-plus-plus/nppThemes/issues) that we remove it from the Collection (or submit a PR to do the same), and we will oblige.
+The original author of any Theme in this Collection may [request](../../issues) that we remove it from the Collection (or submit a PR to do the same), and we will oblige.
