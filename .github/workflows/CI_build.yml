@@ -17,4 +17,4 @@ jobs:
 
     - name: Validate xml of themes folder
       working-directory: .
-      run: python .validators/validate_xml.py
+      run: python .validators/validator_xml.py
