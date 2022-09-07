@@ -24,13 +24,26 @@ It is also possible to use the menu entry [Settings > Import > Import Style Them
 
 ## Submitting your Theme to the Collection
 
+### Theme Best Practices
+
+- Include a comment block near the top of the theme, listing things including
+   - Name of the Theme
+   - Author (you)
+   - Date of creation or last modification
+   - Any other credits or acknowledgements or notes you'd like the user to see when downloading
+- When possible, make use of "background inheritance" (set `colorStyle="1"` in the raw XML or right click on the **Background colour** input in the Style Configurator) so that styles for various language markups inherit the **Default Style**'s background colour -- this will mean that a user of your theme only has to change one entry to get the background to change on hundreds of style entries.  The [99er theme](https://github.com/notepad-plus-plus/nppThemes/blob/main/themes/99er.xml) includes the steps used to do that in a bulk search-and-replace to the raw XML.
+
+See the [default styler](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/src/stylers.model.xml) and the [themes included with Notepad++ distributions](https://github.com/notepad-plus-plus/notepad-plus-plus/tree/master/PowerEditor/installer/themes) for good examples of Themes.
+
+### Submission Process
+
 You can submit your Theme file(s) into this repo if you would like to share it with the general public.  
 
 To do so, you may either:
 - Create a Pull Request: create your own fork of this repository; add the new theme XML file to the themes folder your fork; and finally, create the Pull Request (PR).
 - or Create a new Issue: go to the [issues](../../issues) page for this repository, click on the **New issue** button, give it a meaningful issue name, and attach the theme's .XML file to the issue, then submit the issue.
 
-The Theme Collection team will validate your theme (using manual review and/or automated tools), and will decide whether or not to accept your submission.  
+The Theme Collection team will validate your theme (using manual review and/or automated tools), and will decide whether or not to accept your submission.  Following the Best Practices (above) will help ensure your submitted Theme is added into the Collection.
 
 ## Automatic License
 
