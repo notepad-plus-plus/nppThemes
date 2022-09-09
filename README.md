@@ -49,11 +49,11 @@ The Theme Collection team will validate your theme (using manual review and/or a
 
 All Themes in the Themes Collection are maintained by the Notepad++ user base, purely on a volunteer basis.
 
-It is desired and hoped that the original author of a given Theme will return and make updates to the themes -- for example, when Notepad++ adds new Languages to the available lexers, the original Theme author should come back and add in the definition for that language with the colors of their theme.
+The original author of a given Theme is encouraged to return and make updates to the themes as necessary -- for example, when Notepad++ adds new Languages to the available lexers, it would be helpful if the original Theme author would come back and add in the definition for that language with the colors of their Theme.
 
-However, as this is a user-based Collection, and all the Themes are released as open source, they can be modified by other users... so if you see that your favorite Theme from this Collection is missing one or more lexer languages, feel free to add those languages into the theme, and create a PR (or attach the updated XML to an issue, if you don't know how to do PR) to update that Theme with the new languages, so that the Themes in this Collection are kept as up-to-date with Notepad++ as possible.
+However, as this is a user-based Collection, and all the Themes are released as open source, they can be modified by other users... so if you see that your favorite Theme from this Collection is missing one or more lexer languages, feel free to add those languages into the theme, and create a PR (or attach the updated XML to an issue) to update that Theme with the new languages, so that the Themes in this Collection are kept as up-to-date with Notepad++ as possible.
 
-The administrators of the Themes Collection are _not_ responsible for maintaining the individual themes.  They are here to facilitate adding Themes to the collection, not to do the work of creating and maintaining Themes.  Do not expect to create an issue of "fix the colors in Theme XXX" or "add language ZZZ to all the themes"; such issues are likely to be rejected.  (Though the administrators reserve the right to be in a helpful mood and actually do all that extra work, they definitely do not guarantee that they will always be so accommodating, as that is not their job for this Collection.)
+The administrators of the Themes Collection are _not_ responsible for maintaining the individual themes.  They are here to facilitate adding Themes to the collection, not to do the work of creating and maintaining Themes.  Do not expect to create an issue of "fix the colors in Theme XXX" or "add language ZZZ to all the themes"; such issues are likely to be rejected.
 
 ## Automatic License
 
