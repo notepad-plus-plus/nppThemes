@@ -49,7 +49,7 @@ The Theme Collection team will validate your theme (using manual review and/or a
 
 All Themes in the Themes Collection are maintained by the Notepad++ user base, purely on a volunteer basis.
 
-The original author of a given Theme is encouraged to return and make updates to the themes as necessary -- for example, when Notepad++ adds new Languages to the available lexers, it would be helpful if the original Theme author would come back and add in the definition for that language with the colors of their Theme.
+The original author of a given Theme is encouraged to return and make updates to the themes as necessary -- for example, when Notepad++ adds new languages to the available lexers, it would be helpful if the original Theme author would come back and add in the definitions for those languages with the colors of their Theme.
 
 However, as this is a user-based Collection, and all the Themes are released as open source, they can be modified by other users... so if you see that your favorite Theme from this Collection is missing one or more lexer languages, feel free to add those languages into the theme, and create a PR (or attach the updated XML to an issue) to update that Theme with the new languages, so that the Themes in this Collection are kept as up-to-date with Notepad++ as possible.
 
