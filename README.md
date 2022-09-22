@@ -56,7 +56,7 @@ Since many contributors are not GitHub experts, we have added in this section to
    - ![image](https://user-images.githubusercontent.com/17455758/191838275-f4237476-0e99-45f7-8bc7-251e8936f1d3.png)
    - If you already have a fork, use **Sync Fork > Update Branch** to make sure your fork is up-to-date with the main Collection
 3. Make your changes:
-   - Upload the Theme's XML file to the `themes\` folder _in your fork_
+   - Upload the Theme's XML file to the `themes/` folder _in your fork_
 4. Create a PR from your fork
     - from your fork's master branch, after you've made the changes above,
     - click the down arrow on **Contribute** 
