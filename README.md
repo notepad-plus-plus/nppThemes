@@ -45,6 +45,24 @@ To do so, you may either:
 
 The Theme Collection team will validate your theme (using manual review and/or automated tools), and will decide whether or not to accept your submission.  Following the Best Practices (above) will help ensure your submitted Theme is added into the Collection.
 
+### HOW TO Submit Pull Request
+
+Since many contributors are not GitHub experts, we have added in this section to make it easier for you to submit your file in a Pull Request (PR)
+
+0. Create a GitHub account 
+   - Without an account, you cannot submit a PR
+2. Create a **fork** of the Themes Collection
+   - Click the **Fork** label/icon from the [main UDL Collection page](https://github.com/notepad-plus-plus/nppThemes)
+   - ![image](https://user-images.githubusercontent.com/17455758/191838275-f4237476-0e99-45f7-8bc7-251e8936f1d3.png)
+   - If you already have a fork, use **Sync Fork > Update Branch** to make sure your fork is up-to-date with the main Collection
+3. Make your changes:
+   - Upload the Theme's XML file to the `themes\` folder _in your fork_
+4. Create a PR from your fork
+    - from your fork's master branch, after you've made the changes above,
+    - click the down arrow on **Contribute** 
+    - select **Open Pull Request**
+    - fill out your description for the PR, and submit the PR
+
 ## Automatic License
 
 Any Theme uploaded to the Collection is automatically released under the terms of the GPL v3, as put forth in the Collection's [LICENSE](./LICENSE) file.  If you do not want to publish your Theme under that license, do not submit it to this Collection.
