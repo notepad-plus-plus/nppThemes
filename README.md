@@ -63,6 +63,16 @@ Since many contributors are not GitHub experts, we have added in this section to
     - select **Open Pull Request**
     - fill out your description for the PR, and submit the PR
 
+## Theme Maintenance
+
+All Themes in the Themes Collection are maintained by the Notepad++ user base, purely on a volunteer basis.
+
+The original author of a given Theme is encouraged to return and make updates to the themes as necessary -- for example, when Notepad++ adds new languages to the available lexers, it would be helpful if the original Theme author would come back and add in the definitions for those languages with the colors of their Theme.
+
+However, as this is a user-based Collection, and all the Themes are released as open source, they can be modified by other users... so if you see that your favorite Theme from this Collection is missing one or more lexer languages, feel free to add those languages into the theme, and create a PR (or attach the updated XML to an issue) to update that Theme with the new languages, so that the Themes in this Collection are kept as up-to-date with Notepad++ as possible.
+
+The administrators of the Themes Collection are _not_ responsible for maintaining the individual themes.  They are here to facilitate adding Themes to the collection, not to do the work of creating and maintaining Themes.  Do not expect to create an issue of "fix the colors in Theme XXX" or "add language ZZZ to all the themes"; such issues are likely to be rejected.
+
 ## Automatic License
 
 Any Theme uploaded to the Collection is automatically released under the terms of the GPL v3, as put forth in the Collection's [LICENSE](./LICENSE) file.  If you do not want to publish your Theme under that license, do not submit it to this Collection.
