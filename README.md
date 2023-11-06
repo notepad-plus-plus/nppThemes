@@ -52,7 +52,7 @@ Since many contributors are not GitHub experts, we have added in this section to
 0. Create a GitHub account 
    - Without an account, you cannot submit a PR
 2. Create a **fork** of the Themes Collection
-   - Click the **Fork** label/icon from the [main UDL Collection page](https://github.com/notepad-plus-plus/nppThemes)
+   - Click the **Fork** label/icon from the [main Notepad++ Themes Collection page](https://github.com/notepad-plus-plus/nppThemes)
    - ![image](https://user-images.githubusercontent.com/17455758/191838275-f4237476-0e99-45f7-8bc7-251e8936f1d3.png)
    - If you already have a fork, use **Sync Fork > Update Branch** to make sure your fork is up-to-date with the main Collection
 3. Make your changes:
