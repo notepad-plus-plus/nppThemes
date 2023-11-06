@@ -5,8 +5,8 @@ import io
 import sys
 
 import requests
-from hashlib import sha256
 from lxml import etree
+import json
 
 api_url = os.environ.get('APPVEYOR_API_URL')
 has_error = False
@@ -57,13 +57,21 @@ def parse_xml_file(filename_xml):
         post_error(f'{filename_xml}: Unknown error. Maybe check that no xml version is in the first line.')
 
 def parse_xml_files_from_themes_dir():
-
+    xml_list = []
     for file in os.listdir("themes"):
         if file.endswith(".xml"):
             #print(os.path.join("themes", file))
             parse_xml_file(os.path.join("themes", file))
+            xml_list.append(file)
+    return xml_list
 
-parse_xml_files_from_themes_dir()
+def output_json_toc(tocname, xlst):
+    #print(f'{tocname} =>\n' + json.dumps(sorted(xlst, key=str.casefold), indent=4))
+    with open(tocname, "w", encoding="utf8") as toc_file:
+        json.dump(sorted(xlst, key=str.casefold), toc_file, indent=4)
+
+my_list = parse_xml_files_from_themes_dir()
+output_json_toc('themes/.toc.json', my_list)
 
 if has_error:
     sys.exit(-2)
