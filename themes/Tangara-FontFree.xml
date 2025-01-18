@@ -7,7 +7,7 @@ Notepad++ Custom Style
   Date:         2022-10-25 (Last update: 2025-01-18)
   License:      GPL-3.0 - https://choosealicense.com/licenses/gpl-3.0/
 
-  -----------------------------------------------------------------------------
+  =============================================================================
   ATTENTION!    This is a castrated version of the "Tangara (Original)" theme.
                 The original contains hardcoded font names inside the XML, thus
                 it depends on having those font faces installed. This allows
@@ -21,7 +21,7 @@ Notepad++ Custom Style
                 the 4 "Roboto Mono" font faces supplied with it.
                 Download it from here:
                 -> https://github.com/benelaci/NPP-Tangara-Theme/archive/refs/heads/main.zip
-  -----------------------------------------------------------------------------
+  =============================================================================
 
   Description:  Unreasonably thoroughly picked colors to create the neatest
                 color arrangement I can think of. Designed for the sake of
