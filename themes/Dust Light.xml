@@ -4,7 +4,7 @@ Notepad++ Custom Style
 
   Style name:   Dust Light
   Author:       Laci Bene
-  Date:         2025-01-16 (Last update: 2025-01-18)
+  Date:         2025-01-16 (Last update: 2025-02-16)
   License:      GPL-3.0 - https://choosealicense.com/licenses/gpl-3.0/
 
   Description:  A theme built around a very subtle shade of gray I call
@@ -13,8 +13,10 @@ Notepad++ Custom Style
                 All other colors of the theme serve to keep this fragile shade
                 in tune, while they're also aligned to each other.
 
-  Languages:    Assembly, Bash, Batch, C, C++, C#, CSS, HTML, INI, Java,
-                JavaScript, Lua, Markdown*, PHP, Python, Ruby, SQL, XML, YAML
+  Languages:    Assembly, Bash, Batch, C, C++, C#, CSS, HTML,
+                INI, Java, JavaScript, JSON, Lua, Markdown*,
+                PHP, Python, Ruby, SQL, XML, YAML
+
                 Everything else is usable but not arranged.
                 If the theme gets somewhat popular, I'll optimize more
                 languages. (Especially on request of course.)
@@ -366,7 +368,6 @@ Notepad++ Custom Style
             <WordsStyle name="DOUBLESTRING" styleID="48" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="SINGLESTRING" styleID="49" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="45" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
-            <WordsStyle name="NUMBER" styleID="4" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="SYMBOLS" styleID="50" fgColor="646285" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRINGEOL" styleID="51" fgColor="2C2C33" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="REGEX" styleID="52" fgColor="918300" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
@@ -374,6 +375,22 @@ Notepad++ Custom Style
             <WordsStyle name="COMMENTLINE" styleID="43" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <!-- COMMENTDOC should be like COMMENT, because /**** xyz ****/ is considered COMMENTDOC -->
             <WordsStyle name="COMMENTDOC" styleID="44" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+        </LexerType>
+        <LexerType name="json" desc="JSON" ext="">
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="2C2C33" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="NUMBER" styleID="1" fgColor="8F574A" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="STRING" styleID="2" fgColor="8F574A" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="STRING EOL" styleID="3" fgColor="2C2C33" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="PROPERTY NAME" styleID="4" fgColor="2C2C33" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="ESCAPE SEQUENCE" styleID="5" fgColor="3080a2" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="LINE COMMENT" styleID="6" fgColor="807A80" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="BLOCK COMMENT" styleID="7" fgColor="807A80" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="OPERATOR" styleID="8" fgColor="646285" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="URI" styleID="9" fgColor="918300" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="COMPACT IRI" styleID="10" fgColor="918300" bgColor="c7c4c7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="KEYWORD" styleID="11" fgColor="3B6BBC" bgColor="c7c4c7" colorStyle="1" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="LD KEYWORD" styleID="12" fgColor="3B6BBC" bgColor="c7c4c7" colorStyle="1" keywordClass="instre2"></WordsStyle>
+            <WordsStyle name="ERROR" styleID="13" fgColor="732022" bgColor="f74e36"></WordsStyle>
         </LexerType>
         <LexerType name="kix" desc="KiXtart" ext="">
             <WordsStyle name="DEFAULT" styleID="31" fgColor="2C2C33" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
@@ -528,6 +545,8 @@ Notepad++ Custom Style
             <WordsStyle name="COMMENT" styleID="124" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENTLINE" styleID="125" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="127" fgColor="646285" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FUNCS AND METHODS 1" styleID="214" fgColor="3561b3" bgColor="C7C4C7" keywordClass="substyle7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FUNCS AND METHODS 2" styleID="215" fgColor="3561b3" bgColor="C7C4C7" keywordClass="substyle8" colorStyle="1"></WordsStyle>
         </LexerType>
         <LexerType name="powershell" desc="PowerShell" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="2C2C33" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
@@ -569,18 +588,23 @@ Notepad++ Custom Style
         <LexerType name="python" desc="Python" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="2C2C33" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENTLINE" styleID="1" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="TRIPLE" styleID="6" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="TRIPLEDOUBLE" styleID="7" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FTRIPLE" styleID="18" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FTRIPLEDOUBLE" styleID="19" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="2" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRING" styleID="3" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="CHARACTER" styleID="4" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FSTRING" styleID="16" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FCHARACTER" styleID="17" fgColor="8F574A" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="KEYWORDS" styleID="5" fgColor="3B6BBC" bgColor="C7C4C7" colorStyle="1" fontStyle="1" keywordClass="instre1">True False</WordsStyle>
-            <WordsStyle name="TRIPLE" styleID="6" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
-            <WordsStyle name="TRIPLEDOUBLE" styleID="7" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="ATTRIBUTE" styleID="20" fgColor="406e99" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="DECORATOR" styleID="15" fgColor="5e6a88" bgColor="C7C4C7" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="CLASSNAME" styleID="8" fgColor="CD412A" bgColor="C7C4C7" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="DEFNAME" styleID="9" fgColor="B04B2B" bgColor="C7C4C7" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="646285" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="2C2C33" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENTBLOCK" styleID="12" fgColor="807A80" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
-            <WordsStyle name="STRINGEOL" styleID="12" fgColor="2C2C33" bgColor="C7C4C7" colorStyle="1"></WordsStyle>
         </LexerType>
         <LexerType name="rc" desc="RC" ext="">
             <WordsStyle name="PREPROCESSOR" styleID="9" fgColor="4A8A0B" bgColor="C7C4C7" colorStyle="1"></WordsStyle>

@@ -4,7 +4,7 @@ Notepad++ Custom Style
 
   Style name:   Industrial Whir
   Author:       Laci Bene
-  Date:         2025-01-05 (Last update: 2025-01-18)
+  Date:         2025-01-05 (Last update: 2025-02-15)
   License:      GPL-3.0 - https://choosealicense.com/licenses/gpl-3.0/
 
   Description:  Industrial colors, adjusted in great detail, creating a powerful
@@ -14,8 +14,10 @@ Notepad++ Custom Style
                 the editor and a white-background website. All while preserving
                 the monotonous grayish style.
 
-  Languages:    Assembly, Bash, Batch, C, C++, C#, CSS, HTML, INI, Java,
-                JavaScript, Lua, Markdown*, PHP, Python, Ruby, SQL, XML, YAML
+  Languages:    Assembly, Bash, Batch, C, C++, C#, CSS, HTML,
+                INI, Java, JavaScript, JSON, Lua, Markdown*,
+                PHP, Python, Ruby, SQL, XML, YAML
+
                 Everything else is usable but not arranged.
                 If the theme gets somewhat popular, I'll optimize more
                 languages. (Especially on request of course.)
@@ -304,9 +306,9 @@ Notepad++ Custom Style
         <LexerType name="html" desc="HTML" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENT" styleID="9" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="NUMBER" styleID="5" fgColor="E4EEF2" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="DOUBLESTRING" styleID="6" fgColor="E4EEF2" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="SINGLESTRING" styleID="7" fgColor="E4EEF2" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="NUMBER" styleID="5" fgColor="dde7eb" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="DOUBLESTRING" styleID="6" fgColor="dde7eb" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="SINGLESTRING" styleID="7" fgColor="dde7eb" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="TAG" styleID="1" fgColor="8A98A2" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="TAGEND" styleID="11" fgColor="8A98A2" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="TAGUNKNOWN" styleID="2" fgColor="8A98A2" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
@@ -367,7 +369,6 @@ Notepad++ Custom Style
             <WordsStyle name="DOUBLESTRING" styleID="48" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="SINGLESTRING" styleID="49" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="45" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="NUMBER" styleID="4" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="SYMBOLS" styleID="50" fgColor="B0A766" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRINGEOL" styleID="51" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="REGEX" styleID="52" fgColor="61BBC7" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -375,6 +376,22 @@ Notepad++ Custom Style
             <WordsStyle name="COMMENTLINE" styleID="43" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
             <!-- COMMENTDOC should be like COMMENT, because /**** xyz ****/ is considered COMMENTDOC -->
             <WordsStyle name="COMMENTDOC" styleID="44" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+        </LexerType>
+        <LexerType name="json" desc="JSON" ext="">
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="NUMBER" styleID="1" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="STRING" styleID="2" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="STRING EOL" styleID="3" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="PROPERTY NAME" styleID="4" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="ESCAPE SEQUENCE" styleID="5" fgColor="9fafb8" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="LINE COMMENT" styleID="6" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="BLOCK COMMENT" styleID="7" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="OPERATOR" styleID="8" fgColor="9F9D6D" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="URI" styleID="9" fgColor="61bbc7" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="COMPACT IRI" styleID="10" fgColor="61bbc7" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="KEYWORD" styleID="11" fgColor="B8AE9C" bgColor="323739" colorStyle="1" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="LD KEYWORD" styleID="12" fgColor="B8AE9C" bgColor="323739" colorStyle="1" keywordClass="instre2"></WordsStyle>
+            <WordsStyle name="ERROR" styleID="13" fgColor="ff4614" bgColor="732022"></WordsStyle>
         </LexerType>
         <LexerType name="kix" desc="KiXtart" ext="">
             <WordsStyle name="DEFAULT" styleID="31" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -529,6 +546,8 @@ Notepad++ Custom Style
             <WordsStyle name="COMMENT" styleID="124" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENTLINE" styleID="125" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="127" fgColor="B0A766" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FUNCS AND METHODS 1" styleID="214" fgColor="B8AE9C" bgColor="323739" keywordClass="substyle7" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FUNCS AND METHODS 2" styleID="215" fgColor="B8AE9C" bgColor="323739" keywordClass="substyle8" colorStyle="1"></WordsStyle>
         </LexerType>
         <LexerType name="powershell" desc="PowerShell" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -570,18 +589,23 @@ Notepad++ Custom Style
         <LexerType name="python" desc="Python" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENTLINE" styleID="1" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="TRIPLE" styleID="6" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="TRIPLEDOUBLE" styleID="7" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FTRIPLE" styleID="18" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FTRIPLEDOUBLE" styleID="19" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="2" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRING" styleID="3" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="CHARACTER" styleID="4" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FSTRING" styleID="16" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FCHARACTER" styleID="17" fgColor="FAAA16" bgColor="colorStyle" colorStyle="1"></WordsStyle>
             <WordsStyle name="KEYWORDS" styleID="5" fgColor="B8AE9C" bgColor="323739" colorStyle="1" fontStyle="1" keywordClass="instre1">True False</WordsStyle>
-            <WordsStyle name="TRIPLE" styleID="6" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="TRIPLEDOUBLE" styleID="7" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="CLASSNAME" styleID="8" fgColor="FBAA16" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
-            <WordsStyle name="DEFNAME" styleID="9" fgColor="FAAA16" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
+            <WordsStyle name="ATTRIBUTE" styleID="20" fgColor="8fbabd" bgColor="323739" colorStyle="1"></WordsStyle>
+            <WordsStyle name="DECORATOR" styleID="15" fgColor="93a2ab" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
+            <WordsStyle name="CLASSNAME" styleID="8" fgColor="cfb969" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
+            <WordsStyle name="DEFNAME" styleID="9" fgColor="cfb969" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="B0A766" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENTBLOCK" styleID="12" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="STRINGEOL" styleID="12" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
         </LexerType>
         <LexerType name="rc" desc="RC" ext="">
             <WordsStyle name="PREPROCESSOR" styleID="9" fgColor="A69F98" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -610,14 +634,14 @@ Notepad++ Custom Style
             <WordsStyle name="INSTRUCTION" styleID="5" fgColor="B8AE9C" bgColor="323739" colorStyle="1" fontStyle="1" keywordClass="instre1">if else for while</WordsStyle>
             <WordsStyle name="STRING" styleID="6" fgColor="FAAA16" bgColor="323739" colorStyle="1">bool long int char</WordsStyle>
             <WordsStyle name="CHARACTER" styleID="7" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="CLASS NAME" styleID="8" fgColor="FBAA16" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
-            <WordsStyle name="DEF NAME" styleID="9" fgColor="FAAA16" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
+            <WordsStyle name="CLASS NAME" styleID="8" fgColor="cfb969" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
+            <WordsStyle name="DEF NAME" styleID="9" fgColor="cfb969" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="B0A766" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="REGEX" styleID="12" fgColor="61BBC7" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="GLOBAL" styleID="13" fgColor="3E1C30" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="SYMBOL" styleID="14" fgColor="C7BCA9" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="MODULE NAME" styleID="15" fgColor="FBAA16" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
+            <WordsStyle name="MODULE NAME" styleID="15" fgColor="cfb969" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="INSTANCE VAR" styleID="16" fgColor="8BA6B5" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="CLASS VAR" styleID="17" fgColor="32255A" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="BACKTICKS" styleID="18" fgColor="C9BA83" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -741,9 +765,9 @@ Notepad++ Custom Style
             <WordsStyle name="XMLEND" styleID="13" fgColor="8A98A2" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENT" styleID="9" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="NUMBER" styleID="5" fgColor="E4EEF2" bgColor="323739" colorStyle="1">if else for while</WordsStyle>
-            <WordsStyle name="DOUBLESTRING" styleID="6" fgColor="E4EEF2" bgColor="323739" colorStyle="1">if else for while</WordsStyle>
-            <WordsStyle name="SINGLESTRING" styleID="7" fgColor="E4EEF2" bgColor="323739" colorStyle="1">bool long int char</WordsStyle>
+            <WordsStyle name="NUMBER" styleID="5" fgColor="dde7eb" bgColor="323739" colorStyle="1">if else for while</WordsStyle>
+            <WordsStyle name="DOUBLESTRING" styleID="6" fgColor="dde7eb" bgColor="323739" colorStyle="1">if else for while</WordsStyle>
+            <WordsStyle name="SINGLESTRING" styleID="7" fgColor="dde7eb" bgColor="323739" colorStyle="1">bool long int char</WordsStyle>
             <WordsStyle name="TAG" styleID="1" fgColor="8A98A2" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="TAGEND" styleID="11" fgColor="8A98A2" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
             <WordsStyle name="TAGUNKNOWN" styleID="2" fgColor="75BCC7" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -775,13 +799,13 @@ Notepad++ Custom Style
     </LexerStyles>
     <GlobalStyles>
         <!-- Attention : Don't modify the name of styleID="0" -->
-        <WidgetStyle name="Global override" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1" fontName="JetBrains Mono" fontSize="11"></WidgetStyle>
+        <WidgetStyle name="Global override" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1" fontName="DejaVu Sans Mono" fontSize="12"></WidgetStyle>
         <WidgetStyle name="Default Style" styleID="32" fgColor="E1E6E6" bgColor="323739" colorStyle="1" fontName="JetBrains Mono" fontSize="11"></WidgetStyle>
         <WidgetStyle name="Indent guideline style" styleID="37" fgColor="495152" bgColor="323739" colorStyle="1"></WidgetStyle>
         <WidgetStyle name="Brace highlight style" styleID="34" fgColor="FFDA24" bgColor="807F78"></WidgetStyle>
         <WidgetStyle name="Bad brace colour" styleID="35" fgColor="FB0000" bgColor="323739" colorStyle="1"></WidgetStyle>
         <WidgetStyle name="Current line background colour" styleID="0" bgColor="454243"></WidgetStyle>
-        <WidgetStyle name="Selected text colour" styleID="0" bgColor="B03F3E" fgColor="C04080"></WidgetStyle>
+        <WidgetStyle name="Selected text colour" styleID="0" bgColor="8f3c3c" fgColor="C04080"></WidgetStyle>
         <WidgetStyle name="Caret colour" styleID="2069" fgColor="DFE1F7" bgColor="6699CC"></WidgetStyle>
         <WidgetStyle name="Edge colour" styleID="0" fgColor="445257" bgColor="112435"></WidgetStyle>
         <WidgetStyle name="Line number margin" styleID="33" fgColor="80888A" bgColor="394043"></WidgetStyle>
