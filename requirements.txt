@@ -1,4 +1,4 @@
-pywin32==308
+pywin32==309
 rfc3987==1.3.8
 lxml==5.3.1
 requests==2.32.3
