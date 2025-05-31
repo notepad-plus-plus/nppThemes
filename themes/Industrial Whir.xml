@@ -505,7 +505,6 @@ Notepad++ Custom Style
             <WordsStyle name="HEX NUMBER" styleID="8" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRING" styleID="10" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRING EOL" styleID="11" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="CHARACTER" styleID="7" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="13" fgColor="B0A766" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="ASM" styleID="14" fgColor="D39745" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENT" styleID="2" fgColor="848A96" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -597,7 +596,7 @@ Notepad++ Custom Style
             <WordsStyle name="STRING" styleID="3" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="CHARACTER" styleID="4" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="FSTRING" styleID="16" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="FCHARACTER" styleID="17" fgColor="FAAA16" bgColor="colorStyle" colorStyle="1"></WordsStyle>
+            <WordsStyle name="FCHARACTER" styleID="17" fgColor="FAAA16" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="KEYWORDS" styleID="5" fgColor="B8AE9C" bgColor="323739" colorStyle="1" fontStyle="1" keywordClass="instre1">True False</WordsStyle>
             <WordsStyle name="ATTRIBUTE" styleID="20" fgColor="8fbabd" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="DECORATOR" styleID="15" fgColor="93a2ab" bgColor="323739" colorStyle="1" fontStyle="1"></WordsStyle>
@@ -728,7 +727,6 @@ Notepad++ Custom Style
         <LexerType name="verilog" desc="Verilog" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="TAGNAME" styleID="2" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="INSTRUCTION WORD" styleID="5" fgColor="B8AE9C" bgColor="323739" colorStyle="1" fontStyle="1" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="KEYWORD" styleID="7" fgColor="E1E6E6" bgColor="323739" colorStyle="1" keywordClass="type1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="B0A766" bgColor="323739" colorStyle="1"></WordsStyle>
@@ -753,8 +751,6 @@ Notepad++ Custom Style
             <WordsStyle name="INSTRUCTION" styleID="8" fgColor="B8AE9C" bgColor="323739" colorStyle="1" fontStyle="1" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="STD OPERATOR" styleID="9" fgColor="E1E6E6" bgColor="323739" colorStyle="1" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="ATTRIBUTE" styleID="10" fgColor="E1E6E6" bgColor="323739" colorStyle="1" keywordClass="type1"></WordsStyle>
-            <WordsStyle name="DIRECTIVE" styleID="9" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
-            <WordsStyle name="DIRECTIVE OPERAND" styleID="10" fgColor="E1E6E6" bgColor="323739" colorStyle="1"></WordsStyle>
             <WordsStyle name="STD FUNCTION" styleID="11" fgColor="E1E6E6" bgColor="323739" colorStyle="1" keywordClass="type2"></WordsStyle>
             <WordsStyle name="STD PACKAGE" styleID="12" fgColor="E1E6E6" bgColor="323739" colorStyle="1" keywordClass="type3"></WordsStyle>
             <WordsStyle name="STD TYPE" styleID="13" fgColor="E1E6E6" bgColor="323739" colorStyle="1" keywordClass="type4"></WordsStyle>

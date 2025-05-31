@@ -32,7 +32,7 @@ Notepad++ Custom Style
                 The background color is a bit different for each screen, but
                 on a slightly warmer than neutral screen color temperature it
                 should be roughly as intended.
-                
+
                 The name refers to the male swallow tanager (fecsketangara in
                 Hungarian), although the theme is actually even more similar to
                 the blue-brested kingfisher.
@@ -525,7 +525,6 @@ Notepad++ Custom Style
             <WordsStyle name="HEX NUMBER" styleID="8" fgColor="110C11" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRING" styleID="10" fgColor="120D12" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="STRING EOL" styleID="11" fgColor="120D12" bgColor="12788B" colorStyle="1"></WordsStyle>
-            <WordsStyle name="CHARACTER" styleID="7" fgColor="120D12" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="13" fgColor="B8E7D9" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="ASM" styleID="14" fgColor="D39745" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="COMMENT" styleID="2" fgColor="59BDC4" bgColor="12788B" colorStyle="1"></WordsStyle>
@@ -748,7 +747,6 @@ Notepad++ Custom Style
         <LexerType name="verilog" desc="Verilog" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="F1F1EE" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="F1F1EE" bgColor="12788B" colorStyle="1"></WordsStyle>
-            <WordsStyle name="TAGNAME" styleID="2" fgColor="F1F1EE" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="INSTRUCTION WORD" styleID="5" fgColor="FF6668" bgColor="12788B" colorStyle="1" fontStyle="1" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="KEYWORD" styleID="7" fgColor="F1F1EE" bgColor="12788B" colorStyle="1" keywordClass="type1"></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="B8E7D9" bgColor="12788B" colorStyle="1"></WordsStyle>
@@ -773,8 +771,6 @@ Notepad++ Custom Style
             <WordsStyle name="INSTRUCTION" styleID="8" fgColor="FF6668" bgColor="12788B" colorStyle="1" fontStyle="1" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="STD OPERATOR" styleID="9" fgColor="F1F1EE" bgColor="12788B" colorStyle="1" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="ATTRIBUTE" styleID="10" fgColor="F1F1EE" bgColor="12788B" colorStyle="1" keywordClass="type1"></WordsStyle>
-            <WordsStyle name="DIRECTIVE" styleID="9" fgColor="F1F1EE" bgColor="12788B" colorStyle="1"></WordsStyle>
-            <WordsStyle name="DIRECTIVE OPERAND" styleID="10" fgColor="F1F1EE" bgColor="12788B" colorStyle="1"></WordsStyle>
             <WordsStyle name="STD FUNCTION" styleID="11" fgColor="F1F1EE" bgColor="12788B" colorStyle="1" keywordClass="type2"></WordsStyle>
             <WordsStyle name="STD PACKAGE" styleID="12" fgColor="F1F1EE" bgColor="12788B" colorStyle="1" keywordClass="type3"></WordsStyle>
             <WordsStyle name="STD TYPE" styleID="13" fgColor="F1F1EE" bgColor="12788B" colorStyle="1" keywordClass="type4"></WordsStyle>
