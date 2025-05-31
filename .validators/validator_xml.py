@@ -30,22 +30,17 @@ def post_error(message):
         pprint(message)
 
 
-def parse_xml_file(filename_xml):
-
-    # open and read schema file
-    #with open(filename_xsd, 'r') as schema_file:
-        #schema_to_check = schema_file.read()
+def parse_xml_file(filename_xml, filename_xsd = None):
 
     # parse xml
     try:
         doc = etree.parse(filename_xml)
-        #print(f'{filename_xml} XML well formed, syntax ok.')
+        print(f'{filename_xml} vs parser: XML WELL-FORMED, SYNTAX OK')
 
     # check for file IO error
     except IOError:
         #print('Invalid File')
         post_error(f'{filename_xml}: IOError Invalid File')
-
 
     # check for XML syntax errors
     except etree.XMLSyntaxError as err:
@@ -56,12 +51,55 @@ def parse_xml_file(filename_xml):
         #print('Unknown error.')
         post_error(f'{filename_xml}: Unknown error. Maybe check that no xml version is in the first line.')
 
+
+    ##### check XML using XSD
+    if filename_xsd is not None:
+        try:
+            xmlschema_doc = etree.parse(filename_xsd)
+
+        # error reading XSD
+        except IOError:
+            post_error(f'{filename_xml} | {filename_xsd}: IOError Invalid File')
+            return
+
+        # error parsing XSD
+        except etree.XMLSyntaxError as err:
+            post_error(f'{filename_xml} | {filename_xsd}: {str(err.error_log)}: XMLSyntaxError Invalid File')
+            return
+
+        # other error
+        except Exception as err:
+            post_error(f'{filename_xml} | {filename_xsd}: Unknown error {str(err.error_log)} reading Schema .xsd file.')
+            return
+
+        # Next, extract the schema object from the schema_doc
+        try:
+            xmlschema = etree.XMLSchema(xmlschema_doc)
+            #print(f'{filename_xml} | {filename_xsd}: SCHEMA OBJECT OK')
+
+        # error with Schema
+        except etree.XMLSchemaError as err:
+            post_error(f'{filename_xml} | {filename_xsd}: {str(err.error_log)}: XMLSchemaError')
+            return
+
+        # other error
+        except Exception as err:
+            post_error(f'{filename_xml} | {filename_xsd}: Unknown error {str(err.error_log)} obtaining schema object')
+            return
+
+        # finally, validate the XML against the schema
+        if not xmlschema.validate(doc):
+            post_error(f'{filename_xml} | {filename_xsd}: Validation error {str(xmlschema.error_log)}')
+            return
+        else:
+            print(f'{filename_xml} vs schema: VALIDATION OK')
+
 def parse_xml_files_from_themes_dir():
     xml_list = []
     for file in os.listdir("themes"):
         if file.endswith(".xml"):
             #print(os.path.join("themes", file))
-            parse_xml_file(os.path.join("themes", file))
+            parse_xml_file(os.path.join("themes", file), os.path.join(".validators", "theme.xsd"))
             xml_list.append(file)
     return xml_list
 
