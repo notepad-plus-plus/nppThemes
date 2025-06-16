@@ -24,7 +24,7 @@ jobs:
       working-directory: .
       run: python .validators/validator_xml.py
 
-    - uses: stefanzweifel/git-auto-commit-action@v5
+    - uses: stefanzweifel/git-auto-commit-action@v6
       if: contains('push workflow_dispatch', github.event_name)
       with:
         commit_message: Automatically re-build themes/.toc.json
