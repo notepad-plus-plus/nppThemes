@@ -24,20 +24,29 @@ It is also possible to use the menu entry [Settings > Import > Import Style Them
 
 ## Submitting your Theme to the Collection
 
+### Requirements
+
+- **requirement**: XML prolog / declaration
+    - There _must_ be an XML prolog/declaration as the first line in the file
+    - The prolog/declaration _must_ include encoding attribute
+    - The file encoding (and prolog/declaration encoding attribute) must use UTF-8
+- **requirement**: Any comment block must come _after_ the XML prolog / declaration
+
 ### Theme Best Practices
 
-- Include a comment block near the top of the theme, listing things including
+- Include a comment block near the top of the theme (but _after_ the XML prolog / declaration), listing things including
    - Name of the Theme
    - Author (you)
    - Date of creation or last modification
    - Any other credits or acknowledgements or notes you'd like the user to see when downloading
+   - **requirement**: The comments must not contain a license or copyright notice that contradicts the [Automatic License](#automatic-license) found in the Collection's [LICENSE](./LICENSE) file
 - When possible, make use of "background inheritance" (set `colorStyle="1"` in the raw XML or right click on the **Background colour** input in the Style Configurator) so that styles for various language markups inherit the **Default Style**'s background colour -- this will mean that a user of your theme only has to change one entry to get the background to change on hundreds of style entries.  The [99er theme](https://github.com/notepad-plus-plus/nppThemes/blob/main/themes/99er.xml) includes the steps used to do that in a bulk search-and-replace to the raw XML.
 
 See the [default styler](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/src/stylers.model.xml) and the [themes included with Notepad++ distributions](https://github.com/notepad-plus-plus/notepad-plus-plus/tree/master/PowerEditor/installer/themes) for good examples of Themes.
 
 ### Submission Process
 
-You can submit your Theme file(s) into this repo if you would like to share it with the general public.  
+You can submit your Theme file(s) into this repo if you would like to share it with the general public.
 
 To do so, you may either:
 - Create a Pull Request: create your own fork of this repository; add the new theme XML file to the themes folder your fork; and finally, create the Pull Request (PR).
@@ -49,7 +58,7 @@ The Theme Collection team will validate your theme (using manual review and/or a
 
 Since many contributors are not GitHub experts, we have added in this section to make it easier for you to submit your file in a Pull Request (PR)
 
-0. Create a GitHub account 
+0. Create a GitHub account
    - Without an account, you cannot submit a PR
 2. Create a **fork** of the Themes Collection
    - Click the **Fork** label/icon from the [main Notepad++ Themes Collection page](https://github.com/notepad-plus-plus/nppThemes)
@@ -59,7 +68,7 @@ Since many contributors are not GitHub experts, we have added in this section to
    - Upload the Theme's XML file to the `themes/` folder _in your fork_
 4. Create a PR from your fork
     - from your fork's master branch, after you've made the changes above,
-    - click the down arrow on **Contribute** 
+    - click the down arrow on **Contribute**
     - select **Open Pull Request**
     - fill out your description for the PR, and submit the PR
 
