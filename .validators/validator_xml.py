@@ -62,6 +62,9 @@ def parse_xml_file(filename_xml, filename_xsd = None):
                 'message': 'XML prolog encoding must be UTF-8'
             })
             return
+        else:
+            print(f'{filename_xml} prolog: UTF-8 ENCODING OK')
+
 
     except Exception as e:
         post_error(f'{filename_xml}: Failed to extract XML prolog and/or encoding: "{e}"')
